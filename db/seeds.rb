@@ -1,7 +1,22 @@
-# This file should contain all the record creation needed to seed the database with its default values.
-# The data can then be loaded with the rails db:seed command (or created alongside the database with db:setup).
-#
-# Examples:
-#
-#   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
-#   Character.create(name: 'Luke', movie: movies.first)
+PhoneModel.create!([
+  { name: 'Huawei P30 Pro', annual_price: 300 },
+  { name: 'iPhone 11', annual_price: 1500 },
+  { name: 'LG K12 Plus', annual_price: 400 },
+  { name: 'Motorola One Zoom', annual_price: 350 },
+  { name: 'Moto E6 Plus', annual_price: 250 },
+  { name: 'Moto G7 Play', annual_price: 300 },
+  { name: 'Moto G7 Power', annual_price: 320 },
+  { name: 'Moto G7 Plus', annual_price: 340 },
+  { name: 'Motorola One Vision', annual_price: 400 },
+  { name: 'Samsung Galaxy Note 10 Plus', annual_price: 1500 },
+  { name: 'Samsung Galaxy S10 Plus', annual_price: 1400 },
+  { name: 'Samsung Galaxy A50', annual_price: 1100 },
+  { name: 'Samsung Galaxy A30s', annual_price: 100 },
+  { name: 'Samsung Galaxy A80', annual_price: 900 },
+  { name: 'Samsung Galaxy A10', annual_price: 800 },
+  { name: 'Xiaomi Redmi Note 8', annual_price: 500 },
+  { name: 'Xiaomi Mi 9', annual_price: 600 },
+  { name: 'Xiaomi Redmi 7', annual_price: 450 },
+  { name: 'Xiaomi Redmi Go', annual_price: 450 },
+  { name: 'Zenfone Max Shot', annual_price: 420 }
+])
