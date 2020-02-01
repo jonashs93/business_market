@@ -50,6 +50,9 @@ group :test do
   gem 'selenium-webdriver'
   gem 'rspec-rails'
   gem 'shoulda-matchers'
+  gem 'json_spec'
+  gem 'factory_bot_rails'
+  gem 'ffaker'
   # Easy installation and use of web drivers to run system tests with browsers
   gem 'webdrivers'
 end
