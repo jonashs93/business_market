@@ -29,6 +29,7 @@ gem 'jbuilder', '~> 2.7'
 gem 'bootsnap', '>= 1.4.2', require: false
 gem 'validates_email_format_of'
 gem 'validates_cpf_cnpj'
+gem 'versionist'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
