@@ -4,12 +4,14 @@ RSpec.describe Order, type: :model do
 
   context 'associations' do
     it { should belong_to(:customer) }
+    it { should belong_to(:phone_model) }
   end
 
   context 'validations' do
     it { should validate_presence_of(:customer) }
 
-    # it { should validate_presence_of(:phone_model) }
+    it { should validate_presence_of(:phone_model) }
+
     it { should validate_length_of(:phone_imei).is_equal_to(15) }
 
     it { should validate_presence_of(:annual_price) }

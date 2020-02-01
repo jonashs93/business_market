@@ -27,8 +27,8 @@ gem 'jbuilder', '~> 2.7'
 
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.4.2', require: false
-gem 'email_validator'
 gem 'validates_email_format_of'
+gem 'validates_cpf_cnpj'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console

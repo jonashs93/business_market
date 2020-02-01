@@ -5,6 +5,10 @@ class Order < ApplicationRecord
   belongs_to :customer
   belongs_to :phone_model
 
+  # --- Delegates ---
+
+  delegate :annual_price, to: :phone_model, prefix: true
+
   # --- Validations ---
 
   validates :customer, :phone_model, :phone_imei, presence: true
