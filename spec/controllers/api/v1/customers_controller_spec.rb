@@ -30,7 +30,7 @@ RSpec.describe Api::V1::CustomersController, type: :controller do
       let(:params) { { customer: { name: FFaker::Name.name } } }
 
       it do
-        expect_any_instance_of(CustomerService).to receive(:subscribe)
+        expect_any_instance_of(Api::V1::CustomerService).to receive(:subscribe)
         post :create, params: params
       end
     end
