@@ -5,7 +5,7 @@ RSpec.describe PhoneModelDecorator, type: :decorator do
   subject { object.decorate }
   let(:object) { build(:phone_model) }
 
-  it { expect(subject).to be_decorated_with(PhoneModelDecorator) }
+  it { is_expected.to be_decorated_with(PhoneModelDecorator) }
 
   before do
     object.name = 'Produto X'

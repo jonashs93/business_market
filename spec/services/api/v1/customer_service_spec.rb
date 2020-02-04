@@ -5,8 +5,8 @@ RSpec.describe Api::V1::CustomerService do
   subject { Api::V1::CustomerService.new({}) }
 
   context 'attr_accessors' do
-    it { should respond_to(:object=) }
-    it { should respond_to(:object) }
+    it { is_expected.to respond_to(:object=) }
+    it { is_expected.to respond_to(:object) }
   end
 
   describe '.new' do
