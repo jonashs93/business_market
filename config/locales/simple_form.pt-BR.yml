@@ -1,0 +1,51 @@
+pt-BR:
+  simple_form:
+    required:
+      text: Obrigatório
+      mark: '*'
+    hints:
+      defaults:
+        cpf: 999.999.999-99
+        email: xxxxx@xxxxx.xxx
+
+  helpers:
+    submit:
+      customer:
+        create: Assinar
+
+  number:
+    currency:
+      format:
+        delimiter: "."
+        format: "%u %n"
+        precision: 2
+        separator: ","
+        significant: false
+        strip_insignificant_zeros: false
+        unit: R$
+
+  errors:
+    messages:
+      blank: não pode ficar em branco
+      invalid: não é válido
+      taken: já está em uso
+      too_long: deve possuir tamanho maximo de %{count} caracteres
+      wrong_length: deve possuir exatamente %{count} caracteres
+      less_than_or_equal_to: deve menor ou igual a %{count}
+
+  activemodel:
+    errors:
+      messages:
+        invalid_email_address: não é válido
+
+  activerecord:
+    attributes:
+      customer:
+        name: Nome
+        cpf: CPF
+        email: E-mail
+      order:
+        phone_model: Modelo do celular
+        number_installments: Qtde de parcelas
+        phone_imei: IMEI do celular
+        annual_price: Valor anual
