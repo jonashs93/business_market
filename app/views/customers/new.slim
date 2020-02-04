@@ -11,7 +11,7 @@ h1 Nova Assinatura
   = form.input :email
 
   = form.simple_fields_for :order do |f|
-    = f.association :phone_model
+    = f.association :phone_model, label_method: :decorate_full_name
     = f.input :number_installments
     = f.input :phone_imei
 

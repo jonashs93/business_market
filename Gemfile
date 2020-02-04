@@ -19,6 +19,7 @@ gem 'versionist', '2.0.1'
 gem 'listen', '>= 3.0.5', '< 3.2'
 gem 'simple_form', '5.0.1'
 gem 'slim', '4.0.1'
+gem 'draper', '3.1.0'
 
 group :test do
   gem 'rspec-rails', '4.0.0.beta3'
