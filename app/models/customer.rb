@@ -2,7 +2,7 @@ class Customer < ApplicationRecord
 
   # --- Associations ---
 
-  has_one :order
+  has_one :order, dependent: :destroy
 
   # --- Nested Attributes ---
 

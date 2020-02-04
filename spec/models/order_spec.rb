@@ -4,7 +4,7 @@ RSpec.describe Order, type: :model do
 
   context 'associations' do
     it { should belong_to(:customer) }
-    it { should belong_to(:phone_model) }
+    it { should belong_to(:phone_model).required(false) }
   end
 
   context 'validations' do

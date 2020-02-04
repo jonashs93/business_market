@@ -2,15 +2,13 @@ module Api
   module V1
     class CustomersController < ApplicationController
 
-      skip_before_action :verify_authenticity_token
-
       def create
         customer_service = CustomerService.new(customer_params)
 
         if customer_service.subscribe
           render json: customer_service.object, status: :created
         else
-          render json: { errors: customer_service.object.errors.messages },
+          render json: {errors: customer_service.object.errors.full_messages},
                  status: :unprocessable_entity
         end
       end

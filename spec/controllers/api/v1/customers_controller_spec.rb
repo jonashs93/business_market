@@ -23,7 +23,7 @@ RSpec.describe Api::V1::CustomersController, type: :controller do
       let(:params) { { customer: { name: FFaker::Name.name } } }
 
       it { expect(response).to have_http_status :unprocessable_entity }
-      it { expect(response.body).to have_json_type(Hash).at_path('errors') }
+      it { expect(response.body).to have_json_type(Array).at_path('errors') }
     end
 
     context 'CustomerService#subscribe is called' do

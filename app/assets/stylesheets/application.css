@@ -12,4 +12,15 @@
  *
  *= require_tree .
  *= require_self
+ *= require bootstrap
  */
+
+ body {
+   width: 70%;
+   margin: auto !important;
+ }
+
+#error-notice li {
+  padding-left: 30px;
+  list-style-position: inside;
+}
