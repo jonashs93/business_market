@@ -1,0 +1,18 @@
+h1 Nova Assinatura
+
+= simple_form_for(@customer, url: api_v1_customers_path, remote: true) do |form|
+  .alert.alert-success#success-notice(style='display: none')
+    h5 Assinatura realizada com sucesso!
+
+  ol.alert.alert-danger#error-notice(style='display: none')
+
+  = form.input :name
+  = form.input :cpf, input_html: { class: 'cpf-mask' }
+  = form.input :email
+
+  = form.simple_fields_for :order do |f|
+    = f.association :phone_model
+    = f.input :number_installments
+    = f.input :phone_imei
+
+  = form.submit 'Assinar', class: 'btn btn-primary float-right'

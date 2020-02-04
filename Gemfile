@@ -16,6 +16,9 @@ gem 'bootsnap', '>= 1.4.2', require: false
 gem 'validates_email_format_of', '1.6.0'
 gem 'validates_cpf_cnpj', '0.2.0'
 gem 'versionist', '2.0.1'
+gem 'listen', '>= 3.0.5', '< 3.2'
+gem 'simple_form', '5.0.1'
+gem 'slim', '4.0.1'
 
 group :test do
   gem 'rspec-rails', '4.0.0.beta3'
