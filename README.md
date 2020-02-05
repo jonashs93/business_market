@@ -1,24 +1,46 @@
+
+[![Build Status](https://travis-ci.com/jonashs93/business_market.svg?branch=master](https://travis-ci.com/jonashs93/business_market/builds/147448065#)
+
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Este projeto é um exemplo de como implementar um formulário remoto utilizando Ruby on Rails
 
-Things you may want to cover:
+# Business Market
 
-* Ruby version
+### Dependências
+------------
 
-* System dependencies
+- Ruby version 2.62
+- Rails 6.0.0+
+- yarn 1.12.3+
 
-* Configuration
+### Instalação
+------------
 
-* Database creation
+Instale as gems
 
-* Database initialization
+`bundle install`
 
-* How to run the test suite
+Instale as dependências de javascript
 
-* Services (job queues, cache servers, search engines, etc.)
+`yarn install`
 
-* Deployment instructions
 
-* ...
+### Execução
+------------
+
+Inicie o servidor
+
+`rails s`
+
+A aplicação ficará disponível em
+
+http://localhost:3000/
+
+
+### Teste
+------------
+
+Para rodar os testes
+
+`bundle exec rspec`
