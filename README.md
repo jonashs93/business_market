@@ -1,5 +1,5 @@
 
-[![Build Status](https://travis-ci.com/jonashs93/business_market.svg?branch=master](https://travis-ci.com/jonashs93/business_market/builds/147448065#)
+[![Build Status](https://api.travis-ci.org/jonashs93/business_market.svg?branch=master](https://travis-ci.org/jonashs93/business_market/builds/147448065#)
 
 # README
 
