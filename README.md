@@ -25,6 +25,10 @@ Instale as dependências de javascript
 
 `yarn install`
 
+Crie o banco de dados
+
+`rake db:setup`
+
 
 ### Execução
 ------------
